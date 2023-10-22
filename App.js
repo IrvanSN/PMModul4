@@ -1,20 +1,45 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import {StatusBar, Text, View} from "react-native";
+import {
+  AlignItemsLayout,
+  DisplayAnImageWithStyle,
+  FixedDimensionsBasics,
+  Flex,
+  FlexDimensionsBasics,
+  FlexDirectionBasics,
+  JustifyContentBasics,
+  LotsOfStyles,
+  NativeBaseExample,
+  PercentageDimensionsBasics,
+  PositionLayout,
+  TodoList,
+  WidthHeightBasics,
+} from "./screens";
 
-export default function App() {
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+      <>
+        <StatusBar style={{ padding: 0 }} />
+        <View style={{alignItems: 'center', borderBottomWidth: 2, borderBottomColor: 'black', paddingVertical: 5}}>
+          <Text>Nama: Irvan Surya Nugraha</Text>
+          <Text>NIM: 1203210007</Text>
+        </View>
+        {/* Panggil Komponen Di Sini */}
+        {/*<AlignItemsLayout />*/}
+        {/*<DisplayAnImageWithStyle />*/}
+        {/*<FixedDimensionsBasics />*/}
+        {/*<Flex />*/}
+        {/*<FlexDimensionsBasics />*/}
+        {/*<FlexDirectionBasics />*/}
+        {/*<JustifyContentBasics />*/}
+        {/*<LotsOfStyles />*/}
+        {/*<NativeBaseExample />*/}
+        {/*<PercentageDimensionsBasics />*/}
+        {/*<PositionLayout />*/}
+        {/*<TodoList />*/}
+        <WidthHeightBasics />
+      </>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
